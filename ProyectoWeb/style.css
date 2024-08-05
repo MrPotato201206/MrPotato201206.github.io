@@ -1,0 +1,432 @@
+/* Importación de la fuente Poppins desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+/* Reinicio de estilos predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Poppins', sans-serif; 
+}
+
+/* Asegurarse de que las imágenes no excedan el ancho de su contenedor */
+img {
+    max-width: 100%;
+}
+
+/* Contenedor centralizado */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Estilo del encabezado */
+.header {
+    background-color: #FAFAFA;
+    padding: 150px 0 100px 0;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo del menú de navegación */
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilo de los elementos del menú */
+.menu .navbar ul {
+    display: flex;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #323232;
+    display: block;
+}
+
+/* Estilo de los enlaces del menú al pasar el cursor */
+.menu .navbar ul li a:hover {
+    color: #02B1F4;
+}
+
+/* Estilo del logo */
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: #02B1F4;
+    text-transform: uppercase;
+}
+
+/* Ocultar el checkbox del menú */
+#menu {
+    display: none;
+}
+
+/* Estilo del icono del menú */
+.menu-icono {
+    width: 25px;
+}
+
+/* Estilo de la etiqueta del menú */
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+/* Contenido principal del encabezado */
+.header-content {
+    display: flex;
+}
+
+.header-text {
+    width: 50%;
+}
+
+/* Estilo del título del encabezado */
+.header-text h1 {
+    line-height: 1;
+    color: #323232;
+    text-transform: uppercase;
+    font-size: 75px;
+    margin-bottom: 10px;
+}
+
+/* Estilo del párrafo del encabezado */
+.header-text p {
+    font-size: 16px;
+    color: #818181;
+    margin-bottom: 45px;
+}
+
+.header-img {
+    width: 50%;
+}
+
+/* Estilo del botón principal */
+.btn-1 {
+    display: inline-block;
+    padding: 11px 25px;
+    background-color: #02B1F4;
+    color: #FFFFFF;
+    border-radius: 15px;
+}
+
+/* Sección "Nosotros" */
+.about {
+    padding: 100px 0;
+    display: flex;    
+}
+
+.about-img {
+    width: 50%;
+}
+
+/* Estilo de la imagen de la sección "Nosotros" */
+.about-img img {
+    width: 500px;
+    border-radius: 15px;
+}
+
+.about-txt {
+    width: 50%;
+    margin-left: 25px;
+}
+
+/* Estilo del título de la sección "Nosotros" */
+.about-txt h2 {
+    color: #323232;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+/* Estilo de los párrafos de la sección "Nosotros" */
+.about-txt p {
+    font-size: 16px;
+    color: #818181;
+}
+
+/* Sección de servicios */
+.servicios {
+    padding: 50px 0 100px 0;
+    text-align: center;
+    background-color: #FAFAFA;
+}
+
+/* Estilo del título de la sección de servicios */
+.servicios h2 {
+    color: #323232;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+/* Contenido de la sección de servicios */
+.servicios-content {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicio-1 {
+    padding: 25px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(33.33% - 20px);
+    margin: 10px;
+}
+
+/* Estilo de los iconos de la sección de servicios */
+.servicio-1 i {
+    font-size: 30px;
+    color: #02B1F4;
+    margin-bottom: 15px;
+}
+
+/* Estilo de los títulos de los servicios */
+.servicio-1 h3 {
+    font-size: 25px;
+    color: #323232;
+    text-transform: capitalize;
+}
+
+/* Sección del formulario de contacto */
+.formulario {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo del formulario */
+form {
+    padding: 50px;
+    width: 500px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del título del formulario */
+form h2 {
+    font-size: 25px;
+    color: #323232;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.input-container {
+    position: relative;
+}
+
+/* Estilo de los iconos de los campos del formulario */
+.input-container > i {
+    padding: 14px;
+    border-radius: 50%;
+    background-color: #02B1F4;
+    color: #FFFFFF;
+    position: absolute;
+    font-size: 20px;
+    top: 4px;
+    left: 10px;
+}
+
+/* Estilo de los campos de entrada del formulario */
+.input-container > input, textarea {
+    padding: 17px 15px 17px 60px;
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 35px;
+    background-color: transparent;
+    border: solid #02B1F4;
+    font-size: 16px;
+    outline: none;
+    color: #323232;
+}
+
+/* Estilo del campo de texto del formulario */
+textarea {
+    font-family: 'Poppins', sans-serif;
+    height: 150px;
+}
+
+/* Estilo de los placeholders */
+::placeholder {
+    color: #a0a0a0;
+    font-size: 16px;
+}
+
+/* Estilo del botón de enviar del formulario */
+.btn {
+    background-color: #02B1F4;
+    padding: 17px 30px;
+    width: 100%;
+    border: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    color: #FFFFFF;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Estilo del pie de página */
+.footer {
+    padding: 25px;
+    background-color: #d2cccc;
+}
+
+/* Contenido del pie de página */
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilo de los enlaces del pie de página */
+.link ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link ul li {
+    margin-right: 50px;
+}
+
+.link ul li a {
+    color: #323232;
+    font-size: 17px;
+}
+
+/* Estilo de los enlaces del pie de página al pasar el cursor */
+.link ul li a:hover {
+    color: #02B1F4;
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 991px) {
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #FFFFFF;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header {
+        min-height: 0vh;
+        padding: 80px 30px 50px 30px;
+    }
+
+    .header-content {
+        flex-direction: column;
+    }
+
+    .header-text {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .header-img {
+        width: 100%;
+    }
+
+    .header-img img {
+        width: 100%;
+    }
+
+    .about {
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .about-img {
+        width: 100%;
+        order: 2;
+    }
+
+    .about-img img {
+        width: 100%;
+    }
+
+    .about-txt {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .seriviocios {
+        padding: 30;
+    }
+
+    .servicios-content {
+        margin-top: 25px;
+        flex-direction: column;
+    }
+
+    .servicio-1 {
+        margin-bottom: 20px;
+    }
+
+    .formulario {
+        padding: 20px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .link ul {
+        flex-direction: column;
+    }
+
+    .link ul li {
+        margin: 0 0 15px 0;
+    }
+}
